@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/icon/presmet.ico?v=1.2" type="image/x-icon">
+    <title>Presmet - Acesso à Pesquisa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/css_index.css">
+    <link rel="stylesheet" href="css/css_geral.css">
+</head>
+
+<body>
+
+    <div class="container d-flex flex-column align-items-center">
+        <div class="login-header">
+            <div class="shield-icon">
+                <i class="bi bi-shield-check"></i>
+            </div>
+            <h1 class="brand-name">PRESMET</h1>
+            <p class="brand-subtitle">Avaliação de Riscos Psicossociais</p>
+        </div>
+
+        <div class="access-card">
+            <div id="card-content">
+                <h2 class="card-title">Acesso a Pesquisa</h2>
+                <p class="card-subtitle">Digite seu CPF para gerar o protocolo de acesso</p>
+
+                <form action="#" method="POST" id="accessForm">
+                    <div class="mb-3">
+                        <input type="text" name="cpf" id="cpfInput" class="form-control" placeholder="000.000.000-00"
+                            required>
+                    </div>
+
+                    <button type="submit" class="btn-generate">
+                        Gerar Protocolo
+                    </button>
+                </form>
+
+                <div class="info-box">
+                    <div class="info-item">
+                        <i class="bi bi-shield-lock"></i>
+                        <span>Suas respostas são 100% anônimas e confidenciais</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-lock"></i>
+                        <span>Em conformidade com a LGPD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script src="js/js_geral.js"></script> 
+<script type="module" src="js/js_index.js"></script>
+</body>
+
+</html>
